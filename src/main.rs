@@ -45,11 +45,7 @@ fn main ()
 
     let mut nums = HashSet::new();
 
-    let mut a = 0;
-    let mut b = 0;
-    let mut summed = false;
-
-    'outer: for line in stdin.lock().lines()
+    for line in stdin.lock().lines()
     {
         let curr_inputs: Vec<i32> = line.unwrap().split(" ")
             .map(|x| x.parse().expect("Not an integer!"))
@@ -61,10 +57,8 @@ fn main ()
 
             if nums.contains(&j)
             {
-                a = j;
-                b = i;
-                summed = true;
-                break 'outer;
+                println!("Yes! {} + {} = {}", j, i, k);
+                exit(0);
             }
             else
             {
@@ -73,13 +67,6 @@ fn main ()
         }
     }
 
-    if summed
-    {
-        println!("Yes! {} + {} = {}", a, b, k);
-    }
-    else
-    {
-        println!("Nope!");
-        exit(1);
-    }
+    println!("Nope!");
+    exit(1);
 }

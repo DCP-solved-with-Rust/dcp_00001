@@ -24,4 +24,10 @@ cargo run 17 <<EOF
 EOF
 ```
 
+Output:
+
+```
+Yes! 10 + 7 = 17
+```
+
 Exits with zero if any two of the numbers sum to k. Exits with one if not.

@@ -19,8 +19,9 @@ Solved with Rust 1.27.0 nightly-2018-04-07. https://rustup.rs/
 Example:
 
 ```
-cargo run 17
+cargo run 17 <<EOF
 10 15 3 7
+EOF
 ```
 
 Exits with zero if any two of the numbers sum to k. Exits with one if not.

@@ -15,6 +15,9 @@ Solved with Rust 1.27.0 nightly-2018-04-07. https://rustup.rs/
 NOTE: I saw that https://github.com/GideonShils/Daily-Coding-Problem/blob/57072b0adfec692dcda0f9aaf9ec74d0d6625226/Day1.java
 was a better solution than my own original solution and adapted my solution accordingly.
 
+If you are interested in seeing my original solution, see here:
+[main.rs at revision 22f10c3](https://github.com/DCP-solved-with-Rust/dcp_00001/blob/22f10c3b1e23a01563686f41b9c04f667e2196be/src/main.rs).
+
 ### Usage
 
 `cargo run <k>` and provide the list of numbers on stdin separated by whitespace.

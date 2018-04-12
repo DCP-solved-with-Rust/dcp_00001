@@ -12,6 +12,9 @@
 
 Solved with Rust 1.27.0 nightly-2018-04-07. https://rustup.rs/
 
+NOTE: I saw that https://github.com/GideonShils/Daily-Coding-Problem/blob/57072b0adfec692dcda0f9aaf9ec74d0d6625226/Day1.java
+was a better solution than my own original solution and adapted my solution accordingly.
+
 ### Usage
 
 `cargo run <k>` and provide the list of numbers on stdin separated by whitespace.

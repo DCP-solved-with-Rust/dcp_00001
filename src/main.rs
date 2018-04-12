@@ -53,29 +53,20 @@ fn main ()
             .map(|x| x.parse().expect("Not an integer!"))
             .collect();
 
-        for j in curr_inputs
+        for i in curr_inputs
         {
-            if nums.iter().any(|x| *x == j) && 2 * j == k
+            let j = k - i;
+
+            if nums.iter().any(|x| *x == j)
             {
                 a = j;
-                b = j;
+                b = i;
                 summed = true;
                 break 'outer;
             }
             else
             {
-                for i in nums.iter()
-                {
-                    if i + j == k
-                    {
-                        a = *i;
-                        b = j;
-                        summed = true;
-                        break 'outer;
-                    }
-                }
-
-                nums.push(j);
+                nums.push(i);
             }
         }
     }

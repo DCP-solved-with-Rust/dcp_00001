@@ -30,4 +30,6 @@ Output:
 Yes! 10 + 7 = 17
 ```
 
+Exits with non-zero if any errors occur.
+
 Exits with zero if any two of the numbers sum to k. Exits with one if not.

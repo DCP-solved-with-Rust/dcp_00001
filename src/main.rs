@@ -60,10 +60,8 @@ fn main ()
                 println!("Yes! {} + {} = {}", j, i, k);
                 exit(0);
             }
-            else
-            {
-                nums.insert(i);
-            }
+
+            nums.insert(i);
         }
     }
 

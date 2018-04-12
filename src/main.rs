@@ -21,6 +21,8 @@ use std::vec::Vec;
 use std::io;
 use std::io::prelude::*;
 
+use std::collections::HashSet;
+
 use std::process::exit;
 
 fn main ()
@@ -41,7 +43,7 @@ fn main ()
 
     let stdin = io::stdin();
 
-    let mut nums = Vec::new();
+    let mut nums = HashSet::new();
 
     let mut a = 0;
     let mut b = 0;
@@ -57,7 +59,7 @@ fn main ()
         {
             let j = k - i;
 
-            if nums.iter().any(|x| *x == j)
+            if nums.contains(&j)
             {
                 a = j;
                 b = i;
@@ -66,7 +68,7 @@ fn main ()
             }
             else
             {
-                nums.push(i);
+                nums.insert(i);
             }
         }
     }

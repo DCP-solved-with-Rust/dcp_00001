@@ -1,5 +1,7 @@
 # Daily Coding Problem: Problem #1
 
+[![Build Status](https://travis-ci.org/DCP-solved-with-Rust/dcp_00001.svg?branch=master)](https://travis-ci.org/DCP-solved-with-Rust/dcp_00001?branch=master)
+
 > Good morning. Here's your coding interview problem for today.
 >
 > Given a list of numbers, return whether any two sums to k.

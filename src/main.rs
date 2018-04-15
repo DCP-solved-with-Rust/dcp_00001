@@ -29,6 +29,12 @@ fn main ()
 {
     let args: Vec<String> = env::args().collect();
 
+    /*
+     * We take a single, mandatory argument; k.
+     * This is the same k given in the problem
+     * that we are looking to sum to.
+     */
+
     let k =
     {
         if args.len() == 2
@@ -40,6 +46,12 @@ fn main ()
             panic!(format!("Usage: {:?} <k>", args[0]));
         }
     };
+
+    /*
+     * We read from stdin the list of numbers that
+     * we are going to look through for any two numbers
+     * that will sum to k.
+     */
 
     let stdin = io::stdin();
 

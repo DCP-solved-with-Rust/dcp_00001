@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/DCP-solved-with-Rust/dcp_00001.svg?branch=master)](https://travis-ci.org/DCP-solved-with-Rust/dcp_00001?branch=master)
 
-This repository is part of the [DCP solved with Rust](https://dcp-solved-with-rust.github.io/) series.
+This repository is part of the [DCP Solved with Rust](https://dcp-solved-with-rust.github.io/) series.
 
 > Good morning. Here's your coding interview problem for today.
 >

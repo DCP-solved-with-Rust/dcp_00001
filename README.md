@@ -24,6 +24,9 @@ my solution accordingly.
 If you are interested in having a look at my original solution, see
 [main.rs at revision 22f10c3](https://github.com/DCP-solved-with-Rust/dcp_00001/blob/22f10c3b1e23a01563686f41b9c04f667e2196be/src/main.rs).
 
+For the most recent version (aka. the best version) of the solution, see
+[main.rs at master](https://github.com/DCP-solved-with-Rust/dcp_00001/blob/master/src/main.rs).
+
 ### Usage
 
 `cargo run <k>` and provide the list of numbers on stdin separated by whitespace.

@@ -55,28 +55,43 @@ fn main ()
 
     let stdin = io::stdin();
 
-    let mut nums = HashSet::new();
+    let mut nums = Vec::new();
 
     for line in stdin.lock().lines()
     {
-        let curr_inputs: Vec<i32> = line.unwrap().split(" ")
-            .map(|x| x.parse().expect("Not an integer!"))
+        let mut curr_inputs: Vec<i32> = line.unwrap().split(" ")
+            .map(|x| x.parse().expect("Inputs must be integers!"))
             .collect();
 
-        for i in curr_inputs
+        nums.append(&mut curr_inputs);
+    }
+
+    exit((!any_two_in_list_sum_to_k(nums, k)) as i32);
+}
+
+fn any_two_in_list_sum_to_k (nums: Vec<i32>, k: i32) -> bool
+{
+    if nums.len() < 2
+    {
+        panic!("Need at least two numbers!");
+    }
+
+    let mut unique_nums_seen = HashSet::new();
+
+    for i in nums
+    {
+        let j = k - i;
+
+        if unique_nums_seen.contains(&j)
         {
-            let j = k - i;
+            println!("Yes! {} + {} = {}", j, i, k);
 
-            if nums.contains(&j)
-            {
-                println!("Yes! {} + {} = {}", j, i, k);
-                exit(0);
-            }
-
-            nums.insert(i);
+            return true;
         }
+
+        unique_nums_seen.insert(i);
     }
 
     println!("Nope!");
-    exit(1);
+    return false;
 }

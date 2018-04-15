@@ -95,3 +95,11 @@ fn any_two_in_list_sum_to_k (nums: Vec<i32>, k: i32) -> bool
     println!("Nope!");
     return false;
 }
+
+#[test]
+fn given_example ()
+{
+    let k = 17;
+    let nums = vec![10, 15, 3, 7];
+    assert!(any_two_in_list_sum_to_k(nums, k));
+}

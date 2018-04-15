@@ -48,3 +48,24 @@ Yes! 10 + 7 = 17
 Exits with non-zero if any errors occur.
 
 Exits with zero if any two of the numbers sum to k. Exits with one if not.
+
+### Tests
+
+The original problem statement included the following example of inputs and output:
+
+> For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
+
+A test has been written for this example. You can run the test with
+
+```
+cargo test
+```
+
+Output:
+
+```
+running 1 test
+test given_example ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
+```
